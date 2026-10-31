@@ -118,7 +118,19 @@
       .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok || j.ok === false) throw new Error(j.error || "Erreur serveur (" + r.status + ")"); return j; }); });
   }
   function size(n) { return n >= 1073741824 ? (n / 1073741824).toFixed(2) + " Go" : n >= 1048576 ? (n / 1048576).toFixed(1) + " Mo" : Math.ceil(n / 1024) + " Ko"; }
+  /* Google Traduction (gratuit, sans compte ni clé) : documents, textes et pages web */
+  function googleCard() {
+    var l = (typeof myLang === "function" && myLang()) || "fr";
+    return '<div class="card"><b>🌐 Traduire avec Google Traduction (gratuit)</b><div class="mu">Pour un document Word, PowerPoint, Excel ou PDF : choisissez votre fichier sur le site de Google Traduction, puis téléchargez la version traduite. Pour une vidéo, ouvrez-la sur YouTube et activez les sous-titres traduits (⚙️ → Sous-titres). Les formats et tailles acceptés sont fixés par Google.</div>'
+      + '<div style="margin-top:8px"><a class="ob" style="display:block;text-align:center;text-decoration:none;margin-bottom:6px" target="_blank" rel="noopener" href="https://translate.google.com/?sl=auto&tl=' + encodeURIComponent(l) + '&op=docs">📄 Traduire un document</a>'
+      + '<a class="ob" style="display:block;text-align:center;text-decoration:none;background:#0b7fab" target="_blank" rel="noopener" href="https://translate.google.com/?sl=auto&tl=' + encodeURIComponent(l) + '&op=translate">✍️ Traduire un texte</a></div></div>';
+  }
+  var r2ok; // vrai/faux une fois connu ; l'envoi de fichiers n'est proposé que si le stockage R2 est configuré
   window.docCard = function () {
+    if (r2ok === undefined) { r2ok = null; fetch(((window.DS_CONFIG || {}).API_BASE_URL || "") + "/api/health", { cache: "no-store" }).catch(function () { return null; }).then(function (r) { return r && r.ok ? r.json() : {}; }).then(function (j) { r2ok = j && j.r2_configured === false ? false : true; if (r2ok === false && typeof render === "function") render(); }); }
+    return googleCard() + (r2ok === false ? "" : uploadCard());
+  };
+  function uploadCard() {
     setTimeout(refreshJobs, 60);
     return '<div class="card"><b>📄 Traduire un document, une vidéo ou un fichier</b><div class="mu">Tous formats, y compris de plusieurs Go : le fichier est envoyé par morceaux avec reprise automatique en cas de coupure. Documents (Word, PowerPoint, Excel, PDF avec texte, TXT, SRT/VTT) : fichier traduit. Audio et vidéo : sous-titres traduits (SRT), avec option de copie vidéo sous-titrée.</div>'
       + '<input id="trFile" type="file"><label>Langue de sortie</label>' + SEL_("fileLang", langOpts(), myLang())
