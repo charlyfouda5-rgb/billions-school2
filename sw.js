@@ -1,5 +1,5 @@
-const CACHE_NAME = 'delta-school-v17-shell';
-const SHELL = ['./', './index.html', './manifest.webmanifest', './config.js', './sync.js', './features.js', './extras.js', './share.js', './assets/icon-192.png', './assets/icon-512.png', './assets/icon-maskable-512.png', './assets/icon-180.png', './assets/favicon-32.png', './assets/logo.jpg', './assets/install-logo.png'];
+const CACHE_NAME = 'delta-school-v19-shell';
+const SHELL = ['./', './index.html', './manifest.webmanifest', './config.js', './sync.js', './features.js', './extras.js', './share.js', './demo.js', './assets/icon-192.png', './assets/icon-512.png', './assets/icon-maskable-512.png', './assets/icon-180.png', './assets/favicon-32.png', './assets/logo.jpg', './assets/install-logo.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting()));
 });

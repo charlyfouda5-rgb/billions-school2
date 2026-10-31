@@ -32,10 +32,15 @@
         var k = KIND[s.kind] || KIND.autre, nw = !isRead(s.id);
         return '<div class="card"><b>' + k[0] + " " + esc(s.title) + "</b>" + (nw ? ' <span style="background:#e11d48;color:#fff;border-radius:8px;padding:1px 7px;font-size:12px">Nouveau</span>' : "")
           + '<div class="mu">' + k[1] + " · " + esc(s.ts) + (s.fileName ? " · 📎 " + esc(s.fileName) + " (" + size(s.size) + ")" : "") + "</div>" + (s.note ? '<div style="margin:6px 0;white-space:pre-wrap">' + esc(s.note) + "</div>" : "")
-          + (s.fileId ? '<div style="margin-top:6px">' + btn(s.kind === "video" ? "▶️ Regarder" : "👁 Ouvrir", "openShare(" + s.id + ",'view')", "p") + " " + btn("⬇️ Télécharger", "openShare(" + s.id + ",'download')", "s") + "</div>" : "") + "</div>";
+          + (s.link ? '<div style="margin-top:6px">' + btn(s.kind === "video" ? "▶️ Regarder" : "🔗 Ouvrir le lien", "openLink(" + s.id + ")", "p") + "</div>" : "") + (s.fileId ? '<div style="margin-top:6px">' + btn(s.kind === "video" ? "▶️ Regarder" : "👁 Ouvrir", "openShare(" + s.id + ",'view')", "p") + " " + btn("⬇️ Télécharger", "openShare(" + s.id + ",'download')", "s") + "</div>" : "") + "</div>";
       }).join("") : '<div class="card mu">Aucun contenu reçu pour le moment.</div>');
   };
   VIEWS.biblio = vLib;
+  window.openLink = function (id) {
+    ensure(); var s = S.shares.filter(function (x) { return x.id === id; })[0]; if (!s || !/^https?:\/\//i.test(s.link || "")) return;
+    if (!isRead(id)) { S.shareReads.push({ id: nid(S.shareReads), share: id, uid: me.id, name: me.name, ts: now() }); save(); render(); }
+    window.open(s.link, "_blank", "noopener");
+  };
   window.openShare = function (id, mode) {
     ensure(); var s = S.shares.filter(function (x) { return x.id === id; })[0]; if (!s || !s.fileId) return;
     if (!tok()) return alert("Connectez-vous au serveur en ligne pour ouvrir ce contenu.");
@@ -79,7 +84,7 @@
     return '<h2>📤 Envoyer des livres, vidéos et documents</h2><div class="sim">Choisissez un fichier (de plusieurs Go si besoin : envoi par morceaux avec reprise) puis les destinataires. Ils le retrouvent dans l’onglet « Bibliothèque ».</div>'
       + '<div class="card"><b>1. Le contenu</b>' + IN("sh_title", "Titre (ex. Manuel de mathématiques 3ème)")
       + '<select id="sh_kind"><option value="livre">📖 Livre</option><option value="video">🎬 Vidéo</option><option value="document" selected>📄 Document</option><option value="autre">📎 Autre</option></select>'
-      + '<input id="sh_file" type="file"><textarea id="sh_note" rows="3" placeholder="Message d’accompagnement (facultatif)" style="width:100%;padding:10px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx)"></textarea></div>'
+      + '<input id="sh_file" type="file"><div class="mu">Pas de stockage de fichiers ? Collez plutôt un lien (vidéo YouTube, Google Drive, site…) :</div><input id="sh_link" placeholder="https://…"><textarea id="sh_note" rows="3" placeholder="Message d’accompagnement (facultatif)" style="width:100%;padding:10px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx)"></textarea></div>'
       + '<div class="card"><b>2. Les destinataires</b> — <b id="shCount">0</b> sélectionné(s)<div style="margin:6px 0">' + qb + "</div>"
       + '<select id="sh_role" onchange="shFilter()"><option value="">Tous les profils</option>' + ROLES.map(function (r) { return '<option value="' + r + '"' + (SH.role === r ? " selected" : "") + ">" + esc(RL[r] || r) + "</option>"; }).join("") + "</select>"
       + '<select id="sh_school" onchange="shFilter()"><option value="">Tous les établissements</option>' + sc.map(function (x) { return '<option value="' + x[0] + '"' + (String(x[0]) === SH.school ? " selected" : "") + ">" + esc(x[1]) + "</option>"; }).join("") + "</select>"
@@ -87,7 +92,7 @@
       + '<div class="card"><button id="shGo" onclick="shSend()">📤 Envoyer à la sélection</button> <button id="shStop" onclick="shStop()" style="display:none">Annuler l’envoi</button><div id="shBar" class="mu" style="margin-top:6px"></div></div>'
       + lst("Mes envois (" + mineS.length + ")", mineS.slice(0, 40).map(function (s) {
         var k = KIND[s.kind] || KIND.autre, rd = S.shareReads.filter(function (r) { return r.share === s.id; }).length;
-        return '<div class="row"><span><b>' + k[0] + " " + esc(s.title) + '</b><div class="mu">' + esc(s.ts) + (s.fileName ? " · " + esc(s.fileName) + " (" + size(s.size) + ")" : "") + " · " + s.to.length + " destinataire(s) · " + rd + " ouvert(s)</div></span><span>" + btn("👥", "shDetails(" + s.id + ")") + " " + btn("🗑️", "shDelete(" + s.id + ")") + "</span></div>";
+        return '<div class="row"><span><b>' + k[0] + " " + esc(s.title) + '</b><div class="mu">' + esc(s.ts) + (s.fileName ? " · " + esc(s.fileName) + " (" + size(s.size) + ")" : "") + (s.link ? " · 🔗 lien" : "") + " · " + s.to.length + " destinataire(s) · " + rd + " ouvert(s)</div></span><span>" + btn("👥", "shDetails(" + s.id + ")") + " " + btn("🗑️", "shDelete(" + s.id + ")") + "</span></div>";
       }), "Aucun envoi pour le moment.");
   };
   VIEWS.envoi = vShare;
@@ -124,13 +129,14 @@
   window.shStop = function () { if (busy) { busy.stop = true; busy.x.forEach(function (x) { try { x.abort(); } catch (e) { } }); } };
   window.shSend = function () {
     ensure(); if (busy) return alert("Un envoi est déjà en cours.");
-    var ids = Object.keys(SH.sel).map(Number), title = v("sh_title"), note = (document.getElementById("sh_note").value || "").trim(), kind = v("sh_kind"), f = (document.getElementById("sh_file").files || [])[0];
-    if (!ids.length) return alert("Sélectionnez au moins un destinataire."); if (!title) return alert("Indiquez un titre."); if (!f && !note) return alert("Ajoutez un fichier ou un message.");
+    var ids = Object.keys(SH.sel).map(Number), title = v("sh_title"), note = (document.getElementById("sh_note").value || "").trim(), kind = v("sh_kind"), f = (document.getElementById("sh_file").files || [])[0], link = v("sh_link");
+    if (!ids.length) return alert("Sélectionnez au moins un destinataire."); if (!title) return alert("Indiquez un titre."); if (link && !/^https?:\/\/\S+$/i.test(link)) return alert("Le lien doit commencer par http:// ou https://");
+    if (!f && !note && !link) return alert("Ajoutez un fichier, un lien ou un message.");
     if (f && !tok()) return alert("Connectez-vous au serveur en ligne pour envoyer un fichier.");
     if (!confirm("Envoyer « " + title + " » à " + ids.length + " utilisateur(s) ?")) return;
     var go = document.getElementById("shGo"), st = document.getElementById("shStop"); go.disabled = true; st.style.display = "";
     var rec = function (fileId) {
-      var s = { id: nid(S.shares), from: me.id, to: ids, title: title, note: note, kind: kind, fileId: fileId || 0, fileName: f ? f.name : "", size: f ? f.size : 0, mime: f ? f.type : "", ts: now() };
+      var s = { id: nid(S.shares), from: me.id, to: ids, title: title, note: note, kind: kind, fileId: fileId || 0, link: link || "", fileName: f ? f.name : "", size: f ? f.size : 0, mime: f ? f.type : "", ts: now() };
       S.shares.push(s); L("Contenu envoyé : " + title + " à " + ids.length + " utilisateur(s)"); SH.sel = {}; save(); alert("Contenu envoyé à " + ids.length + " utilisateur(s)."); render();
     };
     if (!f) { rec(0); busy = null; return; }
