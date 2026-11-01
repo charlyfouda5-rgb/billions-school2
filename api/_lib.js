@@ -74,8 +74,8 @@ function clean(state) { // jamais de mot de passe vers le navigateur
 }
 
 /* ---------- application des modifications envoyées par un appareil ---------- */
-const NOT_FOR_LEARNERS = ['schools', 'grades', 'classes', 'subjects', 'cfg', 'langs', 'rates', 'disc', 'dec'];
-const SUPER_ONLY = ['cfg', 'langs', 'rates', 'shares']; // 'shares' : contenus envoyés par le super administrateur
+const NOT_FOR_LEARNERS = ['schools', 'grades', 'classes', 'subjects', 'cfg', 'langs', 'rates', 'disc', 'dec', 'dismissals'];
+const SUPER_ONLY = ['cfg', 'langs', 'rates', 'shares', 'perfSnaps', 'repPts']; // 'shares' : contenus envoyés par le super administrateur
 const GUEST_KEYS = ['reqs', 'logs', 'users', 'schools', 'photos', 'reps', 'nums', 'acc', 'accessHistory']; // parcours d'activation d'un compte après validation
 async function applyOps(state, ops, auth) {
   const S = JSON.parse(JSON.stringify(state)), errs = [], role = auth ? auth.r : 'anon';
