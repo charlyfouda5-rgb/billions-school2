@@ -1,6 +1,6 @@
 {
   "name": "billions-school",
-  "version": "16.0.0",
+  "version": "22.0.0",
   "private": true,
   "engines": {
     "node": ">=20"

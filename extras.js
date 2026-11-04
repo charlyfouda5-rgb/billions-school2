@@ -96,10 +96,10 @@
     loadLeaflet(function (ok) {
       var el = document.getElementById("allmap"); if (!el) return;
       if (!ok) { el.outerHTML = '<div class="card">Carte indisponible hors ligne. Liens directs :' + rows.slice(0, 50).map(function (x) { return '<div class="row"><span>' + esc(x.name) + " · " + esc(x.loginLocal) + '</span><a href="' + geoLink(x) + '" target="_blank" rel="noopener">Ouvrir ↗</a></div>'; }).join("") + "</div>"; return; }
-      var m = LF.map("allmap"), b = []; LF.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: "© OpenStreetMap" }).addTo(m);
+      var m = L.map("allmap"), b = []; L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: "© OpenStreetMap" }).addTo(m);
       var chrono = rows.slice().sort(function (a, c) { return new Date(a.loginAt) - new Date(c.loginAt); });
-      chrono.forEach(function (x, i) { LF.circleMarker([x.lat, x.lng], { radius: 8, color: "#fff", weight: 2, fillColor: pal[x.role] || "#6b7280", fillOpacity: .9 }).addTo(m).bindPopup((one ? "<b>#" + (i + 1) + "</b> " : "") + "<b>" + esc(x.name) + "</b><br>" + esc(RL[x.role] || x.role) + "<br>Entrée : " + esc(x.loginLocal) + "<br>" + (x.logoutLocal ? "Sortie : " + esc(x.logoutLocal) : "En ligne") + (x.acc ? "<br>± " + x.acc + " m" : "")); b.push([x.lat, x.lng]); });
-      if (one && b.length > 1) LF.polyline(b, { color: "#14a38f", weight: 3, opacity: .7 }).addTo(m);
+      chrono.forEach(function (x, i) { L.circleMarker([x.lat, x.lng], { radius: 8, color: "#fff", weight: 2, fillColor: pal[x.role] || "#6b7280", fillOpacity: .9 }).addTo(m).bindPopup((one ? "<b>#" + (i + 1) + "</b> " : "") + "<b>" + esc(x.name) + "</b><br>" + esc(RL[x.role] || x.role) + "<br>Entrée : " + esc(x.loginLocal) + "<br>" + (x.logoutLocal ? "Sortie : " + esc(x.logoutLocal) : "En ligne") + (x.acc ? "<br>± " + x.acc + " m" : "")); b.push([x.lat, x.lng]); });
+      if (one && b.length > 1) L.polyline(b, { color: "#14a38f", weight: 3, opacity: .7 }).addTo(m);
       if (b.length == 1) m.setView(b[0], 16); else m.fitBounds(b, { padding: [30, 30] });
     });
   };

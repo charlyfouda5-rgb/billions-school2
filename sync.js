@@ -6,7 +6,7 @@
   if (CFG.BACKEND_PROVIDER !== "neon" || location.protocol.indexOf("http") !== 0 || typeof S === "undefined") return;
   var API = (CFG.API_BASE_URL || "") + "/api";
   var D = window.DSYNC = { tok: null, guest: false, ver: 0, status: "idle", err: "", at: 0, base: null, busy: false, inj: {}, timer: null };
-  var SEQ = { logs: 1 }, ARR = ["schools","users","classes","subjects","grades","fin","disc","dec","msgs","rat","reqs","acc","nums","dupes","photos","reps","convs","cm","dom","resources","resourceReads","accessHistory","renewRequests","late","logs","groupRequests","groups","meetingRequests","meetings","photoHistory","translationJobs","trReq","gradeUnlockRequests","parentNotices","codeReqs","shares","shareReads","perfSnaps","dismissals","repRatings","repPts","studentArchives","studentTransfers","studentIdentityAudit"];
+  var SEQ = { logs: 1 }, ARR = ["schools","users","classes","subjects","grades","fin","disc","dec","msgs","rat","reqs","acc","nums","dupes","photos","reps","convs","cm","dom","resources","resourceReads","accessHistory","renewRequests","late","logs","groupRequests","groups","meetingRequests","meetings","photoHistory","translationJobs","trReq","gradeUnlockRequests","parentNotices","codeReqs","shares","shareReads","perfSnaps","dismissals"];
 
   /* ---- identifiants uniques entre appareils (plus de collision d'id) ---- */
   var lastId = 0;

@@ -29,9 +29,3 @@ Mise en place : `GUIDE_V16_TRADUCTION_ET_GPS.md`.
 
 ## Ajout V21
 11. **Performances (super administrateur)** : classements des établissements par quartier/ville/région/pays et par période (séquence, trimestre, semestre, année), progression et archives conservées, meilleurs et plus faibles élèves (matières faibles, notes, enseignants), effectifs des abonnés, alertes aux élèves/parents/établissements, renvois avec demande de motif. Chef : onglet « Renvois & localisation ».
-
-## Ajout V22
-12. **Points de priorité des établissements (0–20)** : 60 % moyenne + 25 % réussite + 15 % progression, archivés par période ; section « ⭐ Points » (cumul des années, export CSV).
-13. **Recherche des meilleurs établissements** pour parents et élèves : filtres pays/région/ville/quartier, critères (points, moyenne, réussite, progression, proximité), distance depuis leur position, carte et itinéraire. Les établissements enregistrent leur position GPS.
-14. **Répétiteurs** : notation 1–5 par les familles, points de priorité (85 % avis + 15 % activité), classement par zone ; les mieux classés sont affichés en priorité (🥇 Prioritaire) ; section « 🧑‍🏫 Répétiteurs » du super administrateur.
-15. Correctif : l’ouverture d’une carte n’écrase plus la fonction de journal de l’application.

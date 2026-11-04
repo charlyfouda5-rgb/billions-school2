@@ -1,0 +1,16 @@
+/* DELTA SCHOOL V29 — alerte sonore des nouveaux messages */
+(function(){
+  var ctx=null, enabled=true, lastIds={}, ready=false, lastAlertAt=0;
+  function prefKey(){return 'ds_msg_sound_'+(window.me&&me.id?me.id:'guest')}
+  function readPref(){try{var v=localStorage.getItem(prefKey());if(v!==null)enabled=v==='1'}catch(e){}}
+  function getContext(){var C=window.AudioContext||window.webkitAudioContext;if(!C)return null;try{if(!ctx)ctx=new C();if(ctx.state==='suspended')ctx.resume();return ctx}catch(e){return null}}
+  function tone(){if(!enabled)return;var c=getContext();if(!c)return;try{var now=c.currentTime;[0,0.19].forEach(function(delay,i){var o=c.createOscillator(),g=c.createGain();o.type='sine';o.frequency.value=i?880:660;g.gain.setValueAtTime(0.0001,now+delay);g.gain.exponentialRampToValueAtTime(0.16,now+delay+0.025);g.gain.exponentialRampToValueAtTime(0.0001,now+delay+0.14);o.connect(g);g.connect(c.destination);o.start(now+delay);o.stop(now+delay+0.15)})}catch(e){}}
+  function snapshot(){var a=(window.S&&Array.isArray(S.msgs))?S.msgs:[];lastIds={};a.forEach(function(m){if(m&&m.id!=null)lastIds[String(m.id)]=1});ready=true}
+  function check(){if(!ready){snapshot();return}if(!window.me||!window.S||!Array.isArray(S.msgs))return;var fresh=[];S.msgs.forEach(function(m){if(!m||m.id==null)return;var id=String(m.id);if(!lastIds[id]&&String(m.to)===String(me.id)&&!m.readAt)fresh.push(m);lastIds[id]=1});if(fresh.length&&Date.now()-lastAlertAt>700){lastAlertAt=Date.now();tone();if('Notification' in window&&Notification.permission==='granted'&&document.hidden){try{new Notification('DELTA SCHOOL — Nouveau message',{body:fresh.length>1?fresh.length+' nouveaux messages':('Message de '+((typeof uid==='function'&&(uid(fresh[0].from)||{}).name)||'un utilisateur')),icon:'assets/icon-192.png'})}catch(e){}}}}
+  window.toggleMessageSound=function(){enabled=!enabled;try{localStorage.setItem(prefKey(),enabled?'1':'0')}catch(e){}if(enabled){tone();if('Notification' in window&&Notification.permission==='default')Notification.requestPermission().catch(function(){});alert('Sonnerie des nouveaux messages activée. Gardez DELTA SCHOOL ouverte pour recevoir les alertes.')}else alert('Sonnerie des nouveaux messages désactivée sur cet appareil.');if(typeof render==='function')render()};
+  window.testMessageSound=function(){getContext();tone()};
+  window.messageSoundCard=function(){return '<div class="card"><b>🔔 Sonnerie des nouveaux messages</b><div class="mu">'+(enabled?'Activée sur cet appareil.':'Désactivée sur cet appareil.')+' Une alerte sonore retentit lorsqu’un nouveau message arrive pendant que DELTA SCHOOL est ouverte.</div><button onclick="toggleMessageSound()">'+(enabled?'Désactiver la sonnerie':'Activer la sonnerie')+'</button> <button class="s" onclick="testMessageSound()">Tester la sonnerie</button></div>'};
+  readPref();document.addEventListener('click',function(){if(ctx&&ctx.state==='suspended')ctx.resume().catch(function(){});},{passive:true});
+  // Initialiser sans signaler les anciens messages, puis surveiller les nouveaux.
+  setTimeout(snapshot,1200);setInterval(check,2000);window.addEventListener('storage',function(e){if(e.key&&e.key.indexOf('ds_')===0)setTimeout(check,100)});
+})();
