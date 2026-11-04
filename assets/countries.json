@@ -1,0 +1,1466 @@
+[
+  {
+    "flag": "🇦🇫",
+    "name": "Afghanistan",
+    "dial": "+93",
+    "iso": "AF"
+  },
+  {
+    "flag": "🇿🇦",
+    "name": "Afrique du Sud",
+    "dial": "+27",
+    "iso": "ZA"
+  },
+  {
+    "flag": "🇦🇱",
+    "name": "Albanie",
+    "dial": "+355",
+    "iso": "AL"
+  },
+  {
+    "flag": "🇩🇿",
+    "name": "Algérie",
+    "dial": "+213",
+    "iso": "DZ"
+  },
+  {
+    "flag": "🇩🇪",
+    "name": "Allemagne",
+    "dial": "+49",
+    "iso": "DE"
+  },
+  {
+    "flag": "🇦🇩",
+    "name": "Andorre",
+    "dial": "+376",
+    "iso": "AD"
+  },
+  {
+    "flag": "🇦🇴",
+    "name": "Angola",
+    "dial": "+244",
+    "iso": "AO"
+  },
+  {
+    "flag": "🇦🇮",
+    "name": "Anguilla",
+    "dial": "+1",
+    "iso": "AI"
+  },
+  {
+    "flag": "🇦🇶",
+    "name": "Antarctique",
+    "dial": "+672",
+    "iso": "AQ"
+  },
+  {
+    "flag": "🇦🇬",
+    "name": "Antigua-et-Barbuda",
+    "dial": "+1",
+    "iso": "AG"
+  },
+  {
+    "flag": "🇸🇦",
+    "name": "Arabie saoudite",
+    "dial": "+966",
+    "iso": "SA"
+  },
+  {
+    "flag": "🇦🇷",
+    "name": "Argentine",
+    "dial": "+54",
+    "iso": "AR"
+  },
+  {
+    "flag": "🇦🇲",
+    "name": "Arménie",
+    "dial": "+374",
+    "iso": "AM"
+  },
+  {
+    "flag": "🇦🇼",
+    "name": "Aruba",
+    "dial": "+297",
+    "iso": "AW"
+  },
+  {
+    "flag": "🇦🇺",
+    "name": "Australie",
+    "dial": "+61",
+    "iso": "AU"
+  },
+  {
+    "flag": "🇦🇹",
+    "name": "Autriche",
+    "dial": "+43",
+    "iso": "AT"
+  },
+  {
+    "flag": "🇦🇿",
+    "name": "Azerbaïdjan",
+    "dial": "+994",
+    "iso": "AZ"
+  },
+  {
+    "flag": "🇧🇸",
+    "name": "Bahamas",
+    "dial": "+1",
+    "iso": "BS"
+  },
+  {
+    "flag": "🇧🇭",
+    "name": "Bahreïn",
+    "dial": "+973",
+    "iso": "BH"
+  },
+  {
+    "flag": "🇧🇩",
+    "name": "Bangladesh",
+    "dial": "+880",
+    "iso": "BD"
+  },
+  {
+    "flag": "🇧🇧",
+    "name": "Barbade",
+    "dial": "+1",
+    "iso": "BB"
+  },
+  {
+    "flag": "🇧🇪",
+    "name": "Belgique",
+    "dial": "+32",
+    "iso": "BE"
+  },
+  {
+    "flag": "🇧🇿",
+    "name": "Belize",
+    "dial": "+501",
+    "iso": "BZ"
+  },
+  {
+    "flag": "🇧🇲",
+    "name": "Bermudes",
+    "dial": "+1",
+    "iso": "BM"
+  },
+  {
+    "flag": "🇧🇹",
+    "name": "Bhoutan",
+    "dial": "+975",
+    "iso": "BT"
+  },
+  {
+    "flag": "🇧🇾",
+    "name": "Biélorussie",
+    "dial": "+375",
+    "iso": "BY"
+  },
+  {
+    "flag": "🇧🇴",
+    "name": "Bolivie",
+    "dial": "+591",
+    "iso": "BO"
+  },
+  {
+    "flag": "🇧🇶",
+    "name": "Bonaire, Saint-Eustache et Saba",
+    "dial": "+599",
+    "iso": "BQ"
+  },
+  {
+    "flag": "🇧🇦",
+    "name": "Bosnie-Herzégovine",
+    "dial": "+387",
+    "iso": "BA"
+  },
+  {
+    "flag": "🇧🇼",
+    "name": "Botswana",
+    "dial": "+267",
+    "iso": "BW"
+  },
+  {
+    "flag": "🇧🇳",
+    "name": "Brunei",
+    "dial": "+673",
+    "iso": "BN"
+  },
+  {
+    "flag": "🇧🇷",
+    "name": "Brésil",
+    "dial": "+55",
+    "iso": "BR"
+  },
+  {
+    "flag": "🇧🇬",
+    "name": "Bulgarie",
+    "dial": "+359",
+    "iso": "BG"
+  },
+  {
+    "flag": "🇧🇫",
+    "name": "Burkina Faso",
+    "dial": "+226",
+    "iso": "BF"
+  },
+  {
+    "flag": "🇧🇮",
+    "name": "Burundi",
+    "dial": "+257",
+    "iso": "BI"
+  },
+  {
+    "flag": "🇧🇯",
+    "name": "Bénin",
+    "dial": "+229",
+    "iso": "BJ"
+  },
+  {
+    "flag": "🇰🇭",
+    "name": "Cambodge",
+    "dial": "+855",
+    "iso": "KH"
+  },
+  {
+    "flag": "🇨🇲",
+    "name": "Cameroun",
+    "dial": "+237",
+    "iso": "CM"
+  },
+  {
+    "flag": "🇨🇦",
+    "name": "Canada",
+    "dial": "+1",
+    "iso": "CA"
+  },
+  {
+    "flag": "🇨🇻",
+    "name": "Cap-Vert",
+    "dial": "+238",
+    "iso": "CV"
+  },
+  {
+    "flag": "🇨🇱",
+    "name": "Chili",
+    "dial": "+56",
+    "iso": "CL"
+  },
+  {
+    "flag": "🇨🇳",
+    "name": "Chine",
+    "dial": "+86",
+    "iso": "CN"
+  },
+  {
+    "flag": "🇨🇾",
+    "name": "Chypre",
+    "dial": "+357",
+    "iso": "CY"
+  },
+  {
+    "flag": "🇨🇴",
+    "name": "Colombie",
+    "dial": "+57",
+    "iso": "CO"
+  },
+  {
+    "flag": "🇰🇲",
+    "name": "Comores",
+    "dial": "+269",
+    "iso": "KM"
+  },
+  {
+    "flag": "🇰🇵",
+    "name": "Corée du Nord",
+    "dial": "+850",
+    "iso": "KP"
+  },
+  {
+    "flag": "🇰🇷",
+    "name": "Corée du Sud",
+    "dial": "+82",
+    "iso": "KR"
+  },
+  {
+    "flag": "🇨🇷",
+    "name": "Costa Rica",
+    "dial": "+506",
+    "iso": "CR"
+  },
+  {
+    "flag": "🇭🇷",
+    "name": "Croatie",
+    "dial": "+385",
+    "iso": "HR"
+  },
+  {
+    "flag": "🇨🇺",
+    "name": "Cuba",
+    "dial": "+53",
+    "iso": "CU"
+  },
+  {
+    "flag": "🇨🇼",
+    "name": "Curaçao",
+    "dial": "+599",
+    "iso": "CW"
+  },
+  {
+    "flag": "🇨🇮",
+    "name": "Côte d’Ivoire",
+    "dial": "+225",
+    "iso": "CI"
+  },
+  {
+    "flag": "🇩🇰",
+    "name": "Danemark",
+    "dial": "+45",
+    "iso": "DK"
+  },
+  {
+    "flag": "🇩🇯",
+    "name": "Djibouti",
+    "dial": "+253",
+    "iso": "DJ"
+  },
+  {
+    "flag": "🇩🇲",
+    "name": "Dominique",
+    "dial": "+1",
+    "iso": "DM"
+  },
+  {
+    "flag": "🇪🇸",
+    "name": "Espagne",
+    "dial": "+34",
+    "iso": "ES"
+  },
+  {
+    "flag": "🇪🇪",
+    "name": "Estonie",
+    "dial": "+372",
+    "iso": "EE"
+  },
+  {
+    "flag": "🇸🇿",
+    "name": "Eswatini",
+    "dial": "+268",
+    "iso": "SZ"
+  },
+  {
+    "flag": "🇫🇯",
+    "name": "Fidji",
+    "dial": "+679",
+    "iso": "FJ"
+  },
+  {
+    "flag": "🇫🇮",
+    "name": "Finlande",
+    "dial": "+358",
+    "iso": "FI"
+  },
+  {
+    "flag": "🇫🇷",
+    "name": "France",
+    "dial": "+33",
+    "iso": "FR"
+  },
+  {
+    "flag": "🇬🇦",
+    "name": "Gabon",
+    "dial": "+241",
+    "iso": "GA"
+  },
+  {
+    "flag": "🇬🇲",
+    "name": "Gambie",
+    "dial": "+220",
+    "iso": "GM"
+  },
+  {
+    "flag": "🇬🇭",
+    "name": "Ghana",
+    "dial": "+233",
+    "iso": "GH"
+  },
+  {
+    "flag": "🇬🇮",
+    "name": "Gibraltar",
+    "dial": "+350",
+    "iso": "GI"
+  },
+  {
+    "flag": "🇬🇩",
+    "name": "Grenade",
+    "dial": "+1",
+    "iso": "GD"
+  },
+  {
+    "flag": "🇬🇱",
+    "name": "Groenland",
+    "dial": "+299",
+    "iso": "GL"
+  },
+  {
+    "flag": "🇬🇷",
+    "name": "Grèce",
+    "dial": "+30",
+    "iso": "GR"
+  },
+  {
+    "flag": "🇬🇵",
+    "name": "Guadeloupe",
+    "dial": "+590",
+    "iso": "GP"
+  },
+  {
+    "flag": "🇬🇺",
+    "name": "Guam",
+    "dial": "+1",
+    "iso": "GU"
+  },
+  {
+    "flag": "🇬🇹",
+    "name": "Guatemala",
+    "dial": "+502",
+    "iso": "GT"
+  },
+  {
+    "flag": "🇬🇬",
+    "name": "Guernesey",
+    "dial": "+44",
+    "iso": "GG"
+  },
+  {
+    "flag": "🇬🇳",
+    "name": "Guinée",
+    "dial": "+224",
+    "iso": "GN"
+  },
+  {
+    "flag": "🇬🇶",
+    "name": "Guinée équatoriale",
+    "dial": "+240",
+    "iso": "GQ"
+  },
+  {
+    "flag": "🇬🇼",
+    "name": "Guinée-Bissau",
+    "dial": "+245",
+    "iso": "GW"
+  },
+  {
+    "flag": "🇬🇾",
+    "name": "Guyana",
+    "dial": "+592",
+    "iso": "GY"
+  },
+  {
+    "flag": "🇬🇫",
+    "name": "Guyane française",
+    "dial": "+594",
+    "iso": "GF"
+  },
+  {
+    "flag": "🇬🇪",
+    "name": "Géorgie",
+    "dial": "+995",
+    "iso": "GE"
+  },
+  {
+    "flag": "🇬🇸",
+    "name": "Géorgie du Sud-et-les Îles Sandwich du Sud",
+    "dial": "+500",
+    "iso": "GS"
+  },
+  {
+    "flag": "🇭🇹",
+    "name": "Haïti",
+    "dial": "+509",
+    "iso": "HT"
+  },
+  {
+    "flag": "🇭🇳",
+    "name": "Honduras",
+    "dial": "+504",
+    "iso": "HN"
+  },
+  {
+    "flag": "🇭🇺",
+    "name": "Hongrie",
+    "dial": "+36",
+    "iso": "HU"
+  },
+  {
+    "flag": "🇮🇳",
+    "name": "Inde",
+    "dial": "+91",
+    "iso": "IN"
+  },
+  {
+    "flag": "🇮🇩",
+    "name": "Indonésie",
+    "dial": "+62",
+    "iso": "ID"
+  },
+  {
+    "flag": "🇮🇶",
+    "name": "Irak",
+    "dial": "+964",
+    "iso": "IQ"
+  },
+  {
+    "flag": "🇮🇷",
+    "name": "Iran",
+    "dial": "+98",
+    "iso": "IR"
+  },
+  {
+    "flag": "🇮🇪",
+    "name": "Irlande",
+    "dial": "+353",
+    "iso": "IE"
+  },
+  {
+    "flag": "🇮🇸",
+    "name": "Islande",
+    "dial": "+354",
+    "iso": "IS"
+  },
+  {
+    "flag": "🇮🇱",
+    "name": "Israël",
+    "dial": "+972",
+    "iso": "IL"
+  },
+  {
+    "flag": "🇮🇹",
+    "name": "Italie",
+    "dial": "+39",
+    "iso": "IT"
+  },
+  {
+    "flag": "🇯🇲",
+    "name": "Jamaïque",
+    "dial": "+1",
+    "iso": "JM"
+  },
+  {
+    "flag": "🇯🇵",
+    "name": "Japon",
+    "dial": "+81",
+    "iso": "JP"
+  },
+  {
+    "flag": "🇯🇪",
+    "name": "Jersey",
+    "dial": "+44",
+    "iso": "JE"
+  },
+  {
+    "flag": "🇯🇴",
+    "name": "Jordanie",
+    "dial": "+962",
+    "iso": "JO"
+  },
+  {
+    "flag": "🇰🇿",
+    "name": "Kazakhstan",
+    "dial": "+7",
+    "iso": "KZ"
+  },
+  {
+    "flag": "🇰🇪",
+    "name": "Kenya",
+    "dial": "+254",
+    "iso": "KE"
+  },
+  {
+    "flag": "🇰🇬",
+    "name": "Kirghizistan",
+    "dial": "+996",
+    "iso": "KG"
+  },
+  {
+    "flag": "🇰🇮",
+    "name": "Kiribati",
+    "dial": "+686",
+    "iso": "KI"
+  },
+  {
+    "flag": "🇽🇰",
+    "name": "Kosovo",
+    "dial": "+383",
+    "iso": "XK"
+  },
+  {
+    "flag": "🇰🇼",
+    "name": "Koweït",
+    "dial": "+965",
+    "iso": "KW"
+  },
+  {
+    "flag": "🇷🇪",
+    "name": "La Réunion",
+    "dial": "+262",
+    "iso": "RE"
+  },
+  {
+    "flag": "🇱🇦",
+    "name": "Laos",
+    "dial": "+856",
+    "iso": "LA"
+  },
+  {
+    "flag": "🇱🇸",
+    "name": "Lesotho",
+    "dial": "+266",
+    "iso": "LS"
+  },
+  {
+    "flag": "🇱🇻",
+    "name": "Lettonie",
+    "dial": "+371",
+    "iso": "LV"
+  },
+  {
+    "flag": "🇱🇧",
+    "name": "Liban",
+    "dial": "+961",
+    "iso": "LB"
+  },
+  {
+    "flag": "🇱🇷",
+    "name": "Liberia",
+    "dial": "+231",
+    "iso": "LR"
+  },
+  {
+    "flag": "🇱🇾",
+    "name": "Libye",
+    "dial": "+218",
+    "iso": "LY"
+  },
+  {
+    "flag": "🇱🇮",
+    "name": "Liechtenstein",
+    "dial": "+423",
+    "iso": "LI"
+  },
+  {
+    "flag": "🇱🇹",
+    "name": "Lituanie",
+    "dial": "+370",
+    "iso": "LT"
+  },
+  {
+    "flag": "🇱🇺",
+    "name": "Luxembourg",
+    "dial": "+352",
+    "iso": "LU"
+  },
+  {
+    "flag": "🇲🇰",
+    "name": "Macédoine du Nord",
+    "dial": "+389",
+    "iso": "MK"
+  },
+  {
+    "flag": "🇲🇬",
+    "name": "Madagascar",
+    "dial": "+261",
+    "iso": "MG"
+  },
+  {
+    "flag": "🇲🇾",
+    "name": "Malaisie",
+    "dial": "+60",
+    "iso": "MY"
+  },
+  {
+    "flag": "🇲🇼",
+    "name": "Malawi",
+    "dial": "+265",
+    "iso": "MW"
+  },
+  {
+    "flag": "🇲🇻",
+    "name": "Maldives",
+    "dial": "+960",
+    "iso": "MV"
+  },
+  {
+    "flag": "🇲🇱",
+    "name": "Mali",
+    "dial": "+223",
+    "iso": "ML"
+  },
+  {
+    "flag": "🇲🇹",
+    "name": "Malte",
+    "dial": "+356",
+    "iso": "MT"
+  },
+  {
+    "flag": "🇲🇦",
+    "name": "Maroc",
+    "dial": "+212",
+    "iso": "MA"
+  },
+  {
+    "flag": "🇲🇶",
+    "name": "Martinique",
+    "dial": "+596",
+    "iso": "MQ"
+  },
+  {
+    "flag": "🇲🇺",
+    "name": "Maurice",
+    "dial": "+230",
+    "iso": "MU"
+  },
+  {
+    "flag": "🇲🇷",
+    "name": "Mauritanie",
+    "dial": "+222",
+    "iso": "MR"
+  },
+  {
+    "flag": "🇾🇹",
+    "name": "Mayotte",
+    "dial": "+262",
+    "iso": "YT"
+  },
+  {
+    "flag": "🇲🇽",
+    "name": "Mexique",
+    "dial": "+52",
+    "iso": "MX"
+  },
+  {
+    "flag": "🇫🇲",
+    "name": "Micronésie",
+    "dial": "+691",
+    "iso": "FM"
+  },
+  {
+    "flag": "🇲🇩",
+    "name": "Moldavie",
+    "dial": "+373",
+    "iso": "MD"
+  },
+  {
+    "flag": "🇲🇨",
+    "name": "Monaco",
+    "dial": "+377",
+    "iso": "MC"
+  },
+  {
+    "flag": "🇲🇳",
+    "name": "Mongolie",
+    "dial": "+976",
+    "iso": "MN"
+  },
+  {
+    "flag": "🇲🇸",
+    "name": "Montserrat",
+    "dial": "+1",
+    "iso": "MS"
+  },
+  {
+    "flag": "🇲🇪",
+    "name": "Monténégro",
+    "dial": "+382",
+    "iso": "ME"
+  },
+  {
+    "flag": "🇲🇿",
+    "name": "Mozambique",
+    "dial": "+258",
+    "iso": "MZ"
+  },
+  {
+    "flag": "🇲🇲",
+    "name": "Myanmar",
+    "dial": "+95",
+    "iso": "MM"
+  },
+  {
+    "flag": "🇳🇦",
+    "name": "Namibie",
+    "dial": "+264",
+    "iso": "NA"
+  },
+  {
+    "flag": "🇳🇷",
+    "name": "Nauru",
+    "dial": "+674",
+    "iso": "NR"
+  },
+  {
+    "flag": "🇳🇮",
+    "name": "Nicaragua",
+    "dial": "+505",
+    "iso": "NI"
+  },
+  {
+    "flag": "🇳🇪",
+    "name": "Niger",
+    "dial": "+227",
+    "iso": "NE"
+  },
+  {
+    "flag": "🇳🇬",
+    "name": "Nigeria",
+    "dial": "+234",
+    "iso": "NG"
+  },
+  {
+    "flag": "🇳🇺",
+    "name": "Niue",
+    "dial": "+683",
+    "iso": "NU"
+  },
+  {
+    "flag": "🇳🇴",
+    "name": "Norvège",
+    "dial": "+47",
+    "iso": "NO"
+  },
+  {
+    "flag": "🇳🇨",
+    "name": "Nouvelle-Calédonie",
+    "dial": "+687",
+    "iso": "NC"
+  },
+  {
+    "flag": "🇳🇿",
+    "name": "Nouvelle-Zélande",
+    "dial": "+64",
+    "iso": "NZ"
+  },
+  {
+    "flag": "🇳🇵",
+    "name": "Népal",
+    "dial": "+977",
+    "iso": "NP"
+  },
+  {
+    "flag": "🇴🇲",
+    "name": "Oman",
+    "dial": "+968",
+    "iso": "OM"
+  },
+  {
+    "flag": "🇺🇬",
+    "name": "Ouganda",
+    "dial": "+256",
+    "iso": "UG"
+  },
+  {
+    "flag": "🇺🇿",
+    "name": "Ouzbékistan",
+    "dial": "+998",
+    "iso": "UZ"
+  },
+  {
+    "flag": "🇵🇰",
+    "name": "Pakistan",
+    "dial": "+92",
+    "iso": "PK"
+  },
+  {
+    "flag": "🇵🇼",
+    "name": "Palaos",
+    "dial": "+680",
+    "iso": "PW"
+  },
+  {
+    "flag": "🇵🇸",
+    "name": "Palestine",
+    "dial": "+970",
+    "iso": "PS"
+  },
+  {
+    "flag": "🇵🇦",
+    "name": "Panama",
+    "dial": "+507",
+    "iso": "PA"
+  },
+  {
+    "flag": "🇵🇬",
+    "name": "Papouasie-Nouvelle-Guinée",
+    "dial": "+675",
+    "iso": "PG"
+  },
+  {
+    "flag": "🇵🇾",
+    "name": "Paraguay",
+    "dial": "+595",
+    "iso": "PY"
+  },
+  {
+    "flag": "🇳🇱",
+    "name": "Pays-Bas",
+    "dial": "+31",
+    "iso": "NL"
+  },
+  {
+    "flag": "🇵🇭",
+    "name": "Philippines",
+    "dial": "+63",
+    "iso": "PH"
+  },
+  {
+    "flag": "🇵🇱",
+    "name": "Pologne",
+    "dial": "+48",
+    "iso": "PL"
+  },
+  {
+    "flag": "🇵🇫",
+    "name": "Polynésie française",
+    "dial": "+689",
+    "iso": "PF"
+  },
+  {
+    "flag": "🇵🇷",
+    "name": "Porto Rico",
+    "dial": "+1",
+    "iso": "PR"
+  },
+  {
+    "flag": "🇵🇹",
+    "name": "Portugal",
+    "dial": "+351",
+    "iso": "PT"
+  },
+  {
+    "flag": "🇵🇪",
+    "name": "Pérou",
+    "dial": "+51",
+    "iso": "PE"
+  },
+  {
+    "flag": "🇶🇦",
+    "name": "Qatar",
+    "dial": "+974",
+    "iso": "QA"
+  },
+  {
+    "flag": "🇭🇰",
+    "name": "R.A.S. chinoise de Hong Kong",
+    "dial": "+852",
+    "iso": "HK"
+  },
+  {
+    "flag": "🇲🇴",
+    "name": "R.A.S. chinoise de Macao",
+    "dial": "+853",
+    "iso": "MO"
+  },
+  {
+    "flag": "🇷🇴",
+    "name": "Roumanie",
+    "dial": "+40",
+    "iso": "RO"
+  },
+  {
+    "flag": "🇬🇧",
+    "name": "Royaume-Uni",
+    "dial": "+44",
+    "iso": "GB"
+  },
+  {
+    "flag": "🇷🇺",
+    "name": "Russie",
+    "dial": "+7",
+    "iso": "RU"
+  },
+  {
+    "flag": "🇷🇼",
+    "name": "Rwanda",
+    "dial": "+250",
+    "iso": "RW"
+  },
+  {
+    "flag": "🇨🇫",
+    "name": "République centrafricaine",
+    "dial": "+236",
+    "iso": "CF"
+  },
+  {
+    "flag": "🇩🇴",
+    "name": "République dominicaine",
+    "dial": "+1",
+    "iso": "DO"
+  },
+  {
+    "flag": "🇨🇬",
+    "name": "République du Congo",
+    "dial": "+242",
+    "iso": "CG"
+  },
+  {
+    "flag": "🇨🇩",
+    "name": "République démocratique du Congo",
+    "dial": "+243",
+    "iso": "CD"
+  },
+  {
+    "flag": "🇪🇭",
+    "name": "Sahara occidental",
+    "dial": "+212",
+    "iso": "EH"
+  },
+  {
+    "flag": "🇰🇳",
+    "name": "Saint-Christophe-et-Niévès",
+    "dial": "+1",
+    "iso": "KN"
+  },
+  {
+    "flag": "🇸🇲",
+    "name": "Saint-Marin",
+    "dial": "+378",
+    "iso": "SM"
+  },
+  {
+    "flag": "🇸🇽",
+    "name": "Saint-Martin (partie néerlandaise)",
+    "dial": "+1",
+    "iso": "SX"
+  },
+  {
+    "flag": "🇵🇲",
+    "name": "Saint-Pierre-et-Miquelon",
+    "dial": "+508",
+    "iso": "PM"
+  },
+  {
+    "flag": "🇻🇨",
+    "name": "Saint-Vincent-et-les-Grenadines",
+    "dial": "+1",
+    "iso": "VC"
+  },
+  {
+    "flag": "🇸🇭",
+    "name": "Sainte-Hélène",
+    "dial": "+290",
+    "iso": "SH"
+  },
+  {
+    "flag": "🇱🇨",
+    "name": "Sainte-Lucie",
+    "dial": "+1",
+    "iso": "LC"
+  },
+  {
+    "flag": "🇸🇻",
+    "name": "Salvador",
+    "dial": "+503",
+    "iso": "SV"
+  },
+  {
+    "flag": "🇼🇸",
+    "name": "Samoa",
+    "dial": "+685",
+    "iso": "WS"
+  },
+  {
+    "flag": "🇦🇸",
+    "name": "Samoa américaines",
+    "dial": "+1",
+    "iso": "AS"
+  },
+  {
+    "flag": "🇸🇹",
+    "name": "Sao Tomé-et-Principe",
+    "dial": "+239",
+    "iso": "ST"
+  },
+  {
+    "flag": "🇷🇸",
+    "name": "Serbie",
+    "dial": "+381",
+    "iso": "RS"
+  },
+  {
+    "flag": "🇸🇨",
+    "name": "Seychelles",
+    "dial": "+248",
+    "iso": "SC"
+  },
+  {
+    "flag": "🇸🇱",
+    "name": "Sierra Leone",
+    "dial": "+232",
+    "iso": "SL"
+  },
+  {
+    "flag": "🇸🇬",
+    "name": "Singapour",
+    "dial": "+65",
+    "iso": "SG"
+  },
+  {
+    "flag": "🇸🇰",
+    "name": "Slovaquie",
+    "dial": "+421",
+    "iso": "SK"
+  },
+  {
+    "flag": "🇸🇮",
+    "name": "Slovénie",
+    "dial": "+386",
+    "iso": "SI"
+  },
+  {
+    "flag": "🇸🇴",
+    "name": "Somalie",
+    "dial": "+252",
+    "iso": "SO"
+  },
+  {
+    "flag": "🇸🇩",
+    "name": "Soudan",
+    "dial": "+249",
+    "iso": "SD"
+  },
+  {
+    "flag": "🇸🇸",
+    "name": "Soudan du Sud",
+    "dial": "+211",
+    "iso": "SS"
+  },
+  {
+    "flag": "🇱🇰",
+    "name": "Sri Lanka",
+    "dial": "+94",
+    "iso": "LK"
+  },
+  {
+    "flag": "🇨🇭",
+    "name": "Suisse",
+    "dial": "+41",
+    "iso": "CH"
+  },
+  {
+    "flag": "🇸🇷",
+    "name": "Suriname",
+    "dial": "+597",
+    "iso": "SR"
+  },
+  {
+    "flag": "🇸🇪",
+    "name": "Suède",
+    "dial": "+46",
+    "iso": "SE"
+  },
+  {
+    "flag": "🇸🇯",
+    "name": "Svalbard et Jan Mayen",
+    "dial": "+4779",
+    "iso": "SJ"
+  },
+  {
+    "flag": "🇸🇾",
+    "name": "Syrie",
+    "dial": "+963",
+    "iso": "SY"
+  },
+  {
+    "flag": "🇸🇳",
+    "name": "Sénégal",
+    "dial": "+221",
+    "iso": "SN"
+  },
+  {
+    "flag": "🇹🇯",
+    "name": "Tadjikistan",
+    "dial": "+992",
+    "iso": "TJ"
+  },
+  {
+    "flag": "🇹🇿",
+    "name": "Tanzanie",
+    "dial": "+255",
+    "iso": "TZ"
+  },
+  {
+    "flag": "🇹🇼",
+    "name": "Taïwan",
+    "dial": "+886",
+    "iso": "TW"
+  },
+  {
+    "flag": "🇹🇩",
+    "name": "Tchad",
+    "dial": "+235",
+    "iso": "TD"
+  },
+  {
+    "flag": "🇨🇿",
+    "name": "Tchéquie",
+    "dial": "+420",
+    "iso": "CZ"
+  },
+  {
+    "flag": "🇮🇴",
+    "name": "Territoire britannique de l’océan Indien",
+    "dial": "+246",
+    "iso": "IO"
+  },
+  {
+    "flag": "🇹🇭",
+    "name": "Thaïlande",
+    "dial": "+66",
+    "iso": "TH"
+  },
+  {
+    "flag": "🇹🇱",
+    "name": "Timor oriental",
+    "dial": "+670",
+    "iso": "TL"
+  },
+  {
+    "flag": "🇹🇬",
+    "name": "Togo",
+    "dial": "+228",
+    "iso": "TG"
+  },
+  {
+    "flag": "🇹🇰",
+    "name": "Tokelau",
+    "dial": "+690",
+    "iso": "TK"
+  },
+  {
+    "flag": "🇹🇴",
+    "name": "Tonga",
+    "dial": "+676",
+    "iso": "TO"
+  },
+  {
+    "flag": "🇹🇹",
+    "name": "Trinité-et-Tobago",
+    "dial": "+1",
+    "iso": "TT"
+  },
+  {
+    "flag": "🇹🇳",
+    "name": "Tunisie",
+    "dial": "+216",
+    "iso": "TN"
+  },
+  {
+    "flag": "🇹🇲",
+    "name": "Turkménistan",
+    "dial": "+993",
+    "iso": "TM"
+  },
+  {
+    "flag": "🇹🇷",
+    "name": "Turquie",
+    "dial": "+90",
+    "iso": "TR"
+  },
+  {
+    "flag": "🇹🇻",
+    "name": "Tuvalu",
+    "dial": "+688",
+    "iso": "TV"
+  },
+  {
+    "flag": "🇺🇦",
+    "name": "Ukraine",
+    "dial": "+380",
+    "iso": "UA"
+  },
+  {
+    "flag": "🇺🇾",
+    "name": "Uruguay",
+    "dial": "+598",
+    "iso": "UY"
+  },
+  {
+    "flag": "🇻🇺",
+    "name": "Vanuatu",
+    "dial": "+678",
+    "iso": "VU"
+  },
+  {
+    "flag": "🇻🇦",
+    "name": "Vatican",
+    "dial": "+39",
+    "iso": "VA"
+  },
+  {
+    "flag": "🇻🇪",
+    "name": "Venezuela",
+    "dial": "+58",
+    "iso": "VE"
+  },
+  {
+    "flag": "🇻🇳",
+    "name": "Viêt Nam",
+    "dial": "+84",
+    "iso": "VN"
+  },
+  {
+    "flag": "🇼🇫",
+    "name": "Wallis-et-Futuna",
+    "dial": "+681",
+    "iso": "WF"
+  },
+  {
+    "flag": "🇾🇪",
+    "name": "Yémen",
+    "dial": "+967",
+    "iso": "YE"
+  },
+  {
+    "flag": "🇿🇲",
+    "name": "Zambie",
+    "dial": "+260",
+    "iso": "ZM"
+  },
+  {
+    "flag": "🇿🇼",
+    "name": "Zimbabwe",
+    "dial": "+263",
+    "iso": "ZW"
+  },
+  {
+    "flag": "🇪🇬",
+    "name": "Égypte",
+    "dial": "+20",
+    "iso": "EG"
+  },
+  {
+    "flag": "🇦🇪",
+    "name": "Émirats arabes unis",
+    "dial": "+971",
+    "iso": "AE"
+  },
+  {
+    "flag": "🇪🇨",
+    "name": "Équateur",
+    "dial": "+593",
+    "iso": "EC"
+  },
+  {
+    "flag": "🇪🇷",
+    "name": "Érythrée",
+    "dial": "+291",
+    "iso": "ER"
+  },
+  {
+    "flag": "🇺🇸",
+    "name": "États-Unis",
+    "dial": "+1",
+    "iso": "US"
+  },
+  {
+    "flag": "🇪🇹",
+    "name": "Éthiopie",
+    "dial": "+251",
+    "iso": "ET"
+  },
+  {
+    "flag": "🇨🇽",
+    "name": "Île Christmas",
+    "dial": "+61",
+    "iso": "CX"
+  },
+  {
+    "flag": "🇮🇲",
+    "name": "Île de Man",
+    "dial": "+44",
+    "iso": "IM"
+  },
+  {
+    "flag": "🇳🇫",
+    "name": "Île Norfolk",
+    "dial": "+672",
+    "iso": "NF"
+  },
+  {
+    "flag": "🇰🇾",
+    "name": "Îles Caïmans",
+    "dial": "+1",
+    "iso": "KY"
+  },
+  {
+    "flag": "🇨🇨",
+    "name": "Îles Cocos",
+    "dial": "+61",
+    "iso": "CC"
+  },
+  {
+    "flag": "🇨🇰",
+    "name": "Îles Cook",
+    "dial": "+682",
+    "iso": "CK"
+  },
+  {
+    "flag": "🇫🇴",
+    "name": "Îles Féroé",
+    "dial": "+298",
+    "iso": "FO"
+  },
+  {
+    "flag": "🇫🇰",
+    "name": "Îles Malouines",
+    "dial": "+500",
+    "iso": "FK"
+  },
+  {
+    "flag": "🇲🇵",
+    "name": "Îles Mariannes du Nord",
+    "dial": "+1",
+    "iso": "MP"
+  },
+  {
+    "flag": "🇲🇭",
+    "name": "Îles Marshall",
+    "dial": "+692",
+    "iso": "MH"
+  },
+  {
+    "flag": "🇺🇲",
+    "name": "Îles mineures éloignées des États-Unis",
+    "dial": "+1",
+    "iso": "UM"
+  },
+  {
+    "flag": "🇵🇳",
+    "name": "Îles Pitcairn",
+    "dial": "+64",
+    "iso": "PN"
+  },
+  {
+    "flag": "🇸🇧",
+    "name": "Îles Salomon",
+    "dial": "+677",
+    "iso": "SB"
+  },
+  {
+    "flag": "🇹🇨",
+    "name": "Îles Turques-et-Caïques",
+    "dial": "+1",
+    "iso": "TC"
+  },
+  {
+    "flag": "🇻🇮",
+    "name": "Îles Vierges américaines",
+    "dial": "+1",
+    "iso": "VI"
+  },
+  {
+    "flag": "🇻🇬",
+    "name": "Îles Vierges britanniques",
+    "dial": "+1",
+    "iso": "VG"
+  }
+]
